@@ -383,6 +383,16 @@ class `mat-form-field-type-example-tel-input`.
 controlType = 'example-tel-input';
 ```
 
+### `autofill`
+
+The autofilled property of `MatFormFieldControl` indicates whether the associated input field
+is currently autofilled by the browser (e.g., with saved login information). 
+This can be useful for applying specific styling or behavior based on the autofill status.
+
+Setting autofilled to true adds the CSS class `mat-form-field-autofilled` to the `mat-form-field` element.
+You can use this class to apply custom styles for autofilled fields.
+If the autofilled property is not explicitly set on the control, it is assumed to be false by default.
+
 #### `setDescribedByIds(ids: string[])`
 
 This method is used by the `<mat-form-field>` to set element ids that should be used for the
